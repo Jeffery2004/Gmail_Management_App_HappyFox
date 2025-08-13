@@ -1,0 +1,58 @@
+[
+  {
+    "predicate": "all",
+    "rules": [
+      {
+        "field": "Date Received",
+        "predicate": "less than days",
+        "value": "20"
+      }
+    ],
+    "actions": [
+      "mark as read"
+    ]
+  },
+  {
+    "predicate": "any",
+    "rules": [
+      {
+        "field": "From",
+        "predicate": "contains",
+        "value": "nptel"
+      },
+      {
+        "field": "Subject",
+        "predicate": "contains",
+        "value": "Python"
+      },
+      {
+        "field": "Date Received",
+        "predicate": "less than months",
+        "value": "1"
+      }
+    ],
+    "actions": [
+      "mark as read",
+      "move message: NPTEL"
+    ]
+  },
+  {
+    "predicate": "all",
+    "rules": [
+      {
+        "field": "From",
+        "predicate": "contains",
+        "value": "unstop"
+      },
+      {
+        "field": "Date Received",
+        "predicate": "less than days",
+        "value": "20"
+      }
+    ],
+    "actions": [
+      "mark as unread",
+      "move message: Unstop"
+    ]
+  }
+]
