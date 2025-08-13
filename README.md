@@ -85,6 +85,8 @@ Enable live Gmail access by configuring the Gmail API:
 
 By default, the app runs using the local database (`emails.db`).  
 To enable real-time Gmail access, follow the steps above to set up the Gmail API and OAuth credentials.
+Please note that the Email data shared with you does contain any Personally Identifiable Information (PII). 
+All personal identifiers have been removed  prior to transmission.
 
 ---
 ````
