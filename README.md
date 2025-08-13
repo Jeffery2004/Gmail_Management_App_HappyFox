@@ -81,12 +81,8 @@ To enable the app to access your Gmail account:
 
 ---
 
-## License
+## Disclaimer
 
-*Add license information here if available.*
+By default, the app runs using the local database (emails.db). To enable real-time Gmail access, follow these steps: go to Google Cloud Console, create a project, enable Gmail API, configure the OAuth consent screen, create OAuth client credentials as a Desktop app, and download the credentials.json file into the project folder. Run the app once with python main.py to authorize Gmail and generate token.json for future access.
 
 ---
-
-## Support
-
-*Add contact or support information if available.*
